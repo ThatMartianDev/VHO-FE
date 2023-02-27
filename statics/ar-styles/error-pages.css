@@ -1,0 +1,72 @@
+#page-loader {
+    display: none;
+}
+
+#main {
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 100vw;
+    min-height: 100vh;
+    min-height: var(--window-height);
+    padding-top: var(--white-space-48);
+}
+#main::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/statics/images/mutual-images/404-bg-phone.svg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+
+#error-code-img {
+    width: 80%;
+    max-width: clamp(300px, 50vh, 500px);
+    aspect-ratio: 1 / 0.577319588;
+    margin: auto;
+}
+
+#error-content {
+    width: 90%;
+    margin: auto;
+}
+
+#error-content h1 {
+    margin-bottom: var(--white-space-8);
+    color: #FFF;
+}
+
+#error-content p {
+    font-size: var(--font-size-base);
+    color: #FFF;
+}
+
+#error-content a {
+    margin-top: var(--white-space-8);
+}
+
+#page-footer {
+    display: none;
+}
+
+@media (min-width: 900px){
+    #main {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+    }
+    #main::before {
+        background-image: url("/statics/images/mutual-images/404-bg-pc.svg");
+        background-position: center;
+    }
+
+    #error-content {
+        order: -1;
+    }
+}

@@ -1,0 +1,209 @@
+{% extends 'base-ar.html' %}
+
+{% block docStyles %}
+
+<link rel="stylesheet" href="/statics/ar-styles/index.css">
+
+{% endblock %}
+
+{% block main %}
+
+    <main>
+        <section id="home" class="flex-center fader">
+            <h1 class="slide-out-text fader">اعطني طفلا صغيرا ومتطوعا شغوفا وسأصنع قادة المستقبل للمجتمع</h1>
+            <ul id="home-btns" class="flex-center fader">
+                <li><a href="#programs" id="programs-btn">اكتشف برامجنا</a></li>
+                <li><button id="video-btn" class="flex-center" data-lang-flexRow="ar"><span></span><span>شاهد الفيديو</span></button></li>
+            </ul>
+            <figure id="intro-video" class="flex-center">
+                <video src="/statics/videos/intro-video.mp4" controls preload="metadata"></video>
+                <span id="video-close" tabindex="0">
+                    <span></span>
+                    <span></span>
+                </span>
+            </figure>
+            <figure id="home-img" class="fader">
+                <span class="halo">
+                    <span class="halo-figures magnetic">
+                        <svg width="100%" height="100%" viewBox="0 0 70 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.46016 48.7333C4.02297 41.0735 6.36227 33.7502 9.87739 26.7452C14.1902 18.1504 20.2888 8.1831 29.0001 3.35598C37.8411 -1.54302 47.4481 3.84086 48.8821 13.6711C49.6196 18.7268 47.8141 23.8433 45.6223 28.2942C44.5984 30.3735 43.3955 32.2979 42.0251 34.1625C41.9572 34.2548 40.4962 35.68 41.6127 35.3076C48.4193 33.0378 55.4187 28.4152 62.2854 33.6537C69.2375 38.9572 69.1713 48.7304 63.2205 54.6367C54.448 63.3436 38.2881 62.142 27.2324 59.5841C19.0526 57.6916 11.276 54.8722 3.76076 51.1713C1.34044 49.9795 1.62963 49.6641 2.07458 46.7458" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                        </svg>                            
+                    </span>
+                    <span class="halo-figures magnetic">
+                        <svg width="100%" height="100%" viewBox="0 0 111 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25.6264 93.0759C35.8627 87.4584 44.8848 80.5665 52.1445 71.2893C59.723 61.6048 59.8866 52.3927 57.0941 40.7624C56.2649 37.3091 50.8819 32.876 49.8494 38.7902C48.7743 44.9485 54.1152 50.0677 60.5122 47.6746C77.2446 41.4151 80.4118 17.5325 86.132 2.96434" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M86.1312 2.96578C81.8952 5.29036 79.2 5.12322 74.8672 5.28906" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M86.133 2.96439C84.4796 9.35392 89.7748 13.1158 92.3796 17.8625" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                        </svg>                            
+                    </span>
+                    <span class="halo-figures magnetic">
+                        <svg width="100%" height="100%" viewBox="0 0 93 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M76.6369 74.8023C73.6648 72.3994 70.8487 71.1244 67.1567 70.0588C60.2704 68.0714 53.3276 66.0152 46.7991 63.1339C41.0506 60.5968 35.7852 57.2125 31.0763 53.1224C26.9623 49.549 22.7461 45.3481 22.3812 39.5157C22.0194 33.7314 23.3771 27.7579 27.6498 23.4297C32.2503 18.7693 38.7375 16.212 45.1717 16.5454C48.9063 16.7389 52.7459 18.3113 55.7293 20.4126C58.0971 22.0802 59.9348 24.6395 61.8752 26.7537C62.6775 27.6279 63.1603 28.5616 63.6646 29.6398C65.1251 32.7619 67.104 35.7222 68.8002 38.7223C70.4001 41.5522 71.7098 44.4056 73.0549 47.3618C74.617 50.795 75.693 54.4164 77.5456 57.7113C79.1501 60.5651 80.748 63.67 82.7154 66.2984C82.9853 66.659 83.3306 66.8286 82.8968 67.271C81.0066 69.1988 78.9021 70.9514 76.9123 72.7776" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M62.5434 68.7289C66.2777 63.6111 71.1772 59.481 75.8819 55.163" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M68.1184 60.8976C61.3039 56.931 55.3002 51.6561 48.857 47.1418C46.7035 45.6331 44.2999 43.6061 41.618 43.1627C41.1232 43.0808 38.8641 42.8428 39.0755 43.8417C39.3198 44.9959 40.2302 46.0039 41.1158 46.7293C43.4485 48.6398 46.6264 45.9459 48.414 44.4282C50.7718 42.4265 53.2618 40.0002 54.0155 36.8926C54.4439 35.1265 54.053 33.3568 52.0335 33.0084C50.0556 32.6671 47.8169 33.7197 47.9982 36.0008C48.1112 37.4217 49.0059 38.6166 49.9152 39.64C51.6025 41.5391 53.44 43.2798 55.1894 45.1176C58.9348 49.0523 62.4753 53.2021 66.8885 56.4246C67.8994 57.1628 68.7289 57.8602 69.5724 58.7794" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M48.4463 11.2963C49.8719 8.35043 51.3018 5.40684 52.7359 2.46514" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M33.4048 15.4424C33.1233 10.6758 32.7593 5.93823 32.3359 1.1875" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M14.7903 35.3532L1.29849 37.582" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M17.7898 50.7736C15.1449 53.3511 12.4825 55.7169 9.65876 58.0411" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M20.2686 22.2918C15.9483 20.2455 11.3287 17.5794 6.82812 16.0488" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        </svg>                            
+                    </span>
+                    <span class="halo-figures magnetic">
+                        <svg width="100%" height="100%" viewBox="0 0 136 106" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="90" height="87" transform="matrix(-0.987663 0.156593 0.156593 0.987663 121.484 0)" fill="url(#pattern0)"/>
+                            <path d="M57.2247 64.8645C54.962 58.2997 52.1619 52.6844 47.0417 47.7963C43.1226 44.0548 38.5839 41.2245 33.4333 39.5746C31.0226 38.8023 28.7955 39.1076 26.3203 39.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M26.3298 39.5011C22.589 39.5048 19.5255 40.5277 16.1884 42.2456C12.5458 44.1207 9.05007 46.2025 5.35532 47.974C5.1137 48.0898 4.4388 48.1781 4.64465 48.3497C5.01469 48.658 6.41459 49.0305 6.73399 49.1456C8.95625 49.9464 11.5403 50.6755 13.9189 50.148C17.5709 49.3381 19.4562 45.7354 21.6587 43.0972C22.7228 41.8225 24.7906 39.9142 26.5209 39.6399" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M26.5212 39.6377C21.9346 37.8227 18.1355 35.688 14.6288 32.1677C13.2594 30.793 11.95 29.374 10.5127 28.0674C10.2089 27.7913 9.89687 27.5242 9.58569 27.2563C9.33962 27.0445 8.7638 26.9361 8.84641 26.6221C8.8708 26.5294 9.03465 26.5804 9.13045 26.5771C9.99662 26.5469 10.9706 26.6175 11.8044 26.7355C14.0047 27.0468 16.1214 27.6768 17.9855 28.9303C19.9798 30.2715 21.3245 32.1009 22.5137 34.1488C23.4756 35.8052 24.4842 37.4728 25.4271 39.1348" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M35.2701 40.4497C33.0669 41.5748 30.8832 42.6691 28.923 44.1988C27.0962 45.6245 25.8121 47.3326 24.5045 49.2108C22.5289 52.0486 19.81 53.7975 16.7917 55.365C16.4085 55.564 15.9561 55.795 16.5323 56.1576C17.8348 56.9771 19.5481 56.9738 21.0171 56.8367C23.8673 56.5705 26.4748 55.9043 28.3025 53.6151C29.6029 51.9864 30.9991 50.3291 32.1674 48.6064C32.8017 47.6709 33.0346 46.5361 33.54 45.5333C33.8689 44.8805 34.1236 44.1846 34.5043 43.5581C35.0911 42.5924 36.3674 42.0338 37.2935 41.4815" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M37.2895 41.4824C35.2578 39.2907 34.1942 37.2654 33.2308 34.3673C32.0628 30.8534 31.3903 27.3291 30.7421 23.7062C30.6281 23.069 30.3421 22.3277 30.299 21.6818C30.2695 21.2389 31.1828 21.8679 31.5663 22.0915C33.2387 23.0665 34.2332 24.0535 34.9761 25.8247C36.2814 28.9369 36.1539 32.1167 35.8995 35.3813C35.7962 36.707 35.5393 38.0668 35.6252 39.398C35.675 40.1685 36.1386 40.6435 36.5775 41.2571" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M44.756 45.8784C40.6083 46.536 37.5983 49.1847 35.0183 52.3536C33.5427 54.166 32.0899 55.3453 29.961 56.3585C29.6204 56.5206 28.674 56.7419 28.9925 56.9441C29.6219 57.3438 30.8415 57.4111 31.5582 57.486C33.4932 57.6882 35.3618 56.9309 36.8478 55.7174C38.9181 54.0269 40.4761 51.5131 42.0622 49.3864C42.9659 48.1747 44.0634 47.6592 45.2428 46.8156" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M45.5491 46.5979C45.114 45.1542 44.1287 43.8419 43.6317 42.3838C42.2984 38.4719 42.4613 34.5691 42.2829 30.4994C42.2386 29.4892 42.1176 28.4912 42.049 27.4838C42.012 26.9415 41.9583 26.4521 42.5715 26.9877C44.8772 29.0012 46.3021 31.9716 47.0021 34.908C47.4467 36.7731 47.9878 38.9667 47.4202 40.8626C47.1571 41.7412 46.7273 42.6139 46.3154 43.433C45.7178 44.6214 45.3946 45.6235 45.6014 46.9277" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_512_3663" transform="translate(0 -0.0172414) scale(0.015625 0.0161638)"/>
+                            </pattern>
+                            <image id="image0_512_3663" width="64" height="64" xlink:href="data:image/png;base64,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"/>
+                            </defs>
+                            </svg>                            
+                    </span>
+                </span>
+                <img src="/statics/images/home-images/home-family.svg" class="fader" alt="صورة تعبيرية عن اهتمامنا بالطفل تنمية قدراته">
+            </figure>
+        </section>
+        <section id="about" class="flex-center">
+            <h2 class="section-title-ar slide-out-text fader">معظم الأطفال والمراهقين ليسوا على دراية بالعمل التطوعي وأهميته!</h2>
+            <p><span class="slide-out-text fader">فمن المهم أن نأخذ بيد أطفالنا لتنمية مهاراتهم وجعلها إحدى ركائز المستقبل لنمو مجتمعاتنا وتقويتها. سيكونون قادرين على بناء مستقبل أفضل لأنفسهم وللمجتمع ككل من خلال تطوير مهاراتهم وتشجيعهم على أن يكونوا متطوعين دافعين بعجلة نمو مجتمعاتهم وأن يكونوا مفكرين مبدعين</span></p>
+            <a href="{{ url_for('.ar_about') }}" class="main-CTAs flex-center fader"><span>تعرف المزيد عنا</span></a>
+        </section>
+        <section id="impact" class="flex-center-col">
+            <h3 class="section-title-ar"><span class="slide-out-text fader"> تأثيرنا</span><span class="slide-out-text fader"> في</span><span class="slide-out-text fader"> المجتمع</span></h3>
+            <div class="impact-item flex-center-col">
+                <figure class="impact-img fader">
+                        <img src="/statics/images/home-images/mountains.svg" alt="جبال عالية" id="mountains" data-no-sizing="yes" loading="lazy">
+                        <img src="/statics/images/home-images/count.svg" alt="العدد 500 معبرا عن عدد الاطفال الشين تم تدريبهم من خلال برامجنا" id="count" class="fader" data-no-sizing="yes" loading="lazy">
+                        <img src="/statics/images/home-images/hills.svg" alt="هضاب تحتوي على اشجار" id="hills" data-no-sizing="yes" loading="lazy">
+                        <img src="/statics/images/home-images/landscape-kids.svg" alt="مجموعة من الاطفال يقفزون فوق الهضاب وخلف الشجيرات" id="kids" class="fader" data-no-sizing="yes" loading="lazy">
+                        <img src="/statics/images/home-images/bushes.svg" alt="شجيرات خضراء" id="bushes" data-no-sizing="yes" loading="lazy">
+                        <img src="/statics/images/home-images/Landscape-clouds.svg" alt="سحب بيضاء كفاصل بين الصورة المعبرة عن تأثيرنا الحاليه والصورة المعبرة عن تأثيرنا القادمة بعدها" id="landscape-clouds" data-no-sizing="yes" loading="lazy">
+                </figure>
+                <p class="flex-center-col"><span>500+</span><span class="slide-out-text fader">طفل من مختلف الجنسيات تم تدريبهم من خلال برامجنا</span></p>
+            </div>
+            <div class="impact-item flex-center-col">
+                <span class="middle-clouds">
+                    <img src="/statics/images/home-images/middle-clouds.svg" loading="lazy"  alt="سحب بيضاء كفاصل بين الصورة المعبرة عن تأثيرنا السابقة و الصورة المعبرة عن تأثيرنا الحالية ">
+                </span>
+                <figure class="impact-img">
+                    <img src="/statics/images/home-images/impact-volunteers.svg" loading="lazy" alt="صور تعبيرية لكوكب الارض موضح فيها مواقع فروعنا, وايادي متطوعينا" data-no-sizing="yes">
+                </figure>
+                <p class="flex-center-col"><span>600+</span><span class="slide-out-text fader">متطوع متفاعل معنا في عدة بلدان في الشرق الاوسط وشمال افريقيا</span></p>
+            </div>
+        </section>
+        <section id="programs" class="flex-center">
+            <h4 class="section-title-ar"><span class="slide-out-text fader">اكتشف </span><span class="slide-out-text fader">برامجنا</span></h4>
+            <article class="program-category">
+                <figure class="program-img fader">
+                    <img src="/statics/images/home-images/children-teenagers.svg" alt="رسم تعبيري لمجموعة من الاطفال والمراهقين" loading="lazy">
+                </figure>
+                <div class="program-descr flex-center-col">
+                    <h4 class="sub-title-ar slide-out-text fader">برامجنا للاطفال</h4>
+                    <i class="section-title-ar slide-out-text fader">نمكن الاطفال ليكونوا قادة المستقبل</i>
+                    <p class="slide-out-text fader">عبارة عن برامج تدعم الأفكار التي نريد أن نوصلها للأطفال، تشمل العمل التطوعي والمبادرة وريادة الأعمال والمشروع المبتكر</p>
+                    <a href="{{ url_for('.children-programs.children_programs_overview') }}" class="main-CTAs flex-center fader"><span>اكتشف قائمة البرامج</span></a>
+                </div>
+            </article>
+            <article class="program-category">
+                <figure class="program-img fader">
+                    <img src="/statics/images/home-images/youth.svg" alt="رسم تعبيري لشابين" loading="lazy">
+                </figure>
+                <div class="program-descr flex-center-col">
+                    <h4 class="sub-title-ar slide-out-text fader">برنامج تطوير الشباب</h4>
+                    <i class="section-title-ar slide-out-text fader">نطور من قدرات الشباب ليكونوا مواطنين فعالين</i>
+                    <p class="slide-out-text fader">من الأهمية أن نوفر لشبابنا فرصًا لتطوير مهاراتهم وكفاءاتهم حتى يصبحوا مواطنين مشاركين بالكامل قادرين على دفع عجلة النمو لمجتمعهم المحلي وتقديم مساهمة إيجابية في تطويره</p>
+                    <a href="{{ url_for('arabic.ydp') }}" class="main-CTAs flex-center fader"><span>تعرف المزيد</span></a>
+                </div>
+            </article>
+        </section>
+        <!-- <section id="events" class="flex-center-col">
+            <h5 class="section-title-ar"><span class="slide-out-text fader"> شارك</span><span class="slide-out-text fader"> في</span><span class="slide-out-text fader"> فعالياتنا</span></h5>
+            <ul id="events-slider" class="slider fader add-anchors" tabindex="0">
+                <li class="event-item flex-center-col">
+                    <a href="/events/abc-volunteering" aria-labelledby="fst-event"></a >
+                    <img src="/statics/images/events-images/event-main.jpeg" class="event-img" loading="lazy">
+                    <p id="fst-event">
+                        <span class="event-link-svg">
+                            <svg width="100%" height="100%" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1H7M7 1V6.84211M7 1L1 7" stroke="white" stroke-linecap="round"/>
+                            </svg>                            
+                        </span>
+                        <span data-lan="en">ABC Volunteering</span>
+                    </p>
+                </li>
+                <li class="event-item flex-center-col">
+                    <a href="/events/abc-volunteering" aria-labelledby="sec-event"></a >
+                    <img src="/statics/images/events-images/event-main.jpeg" class="event-img" loading="lazy">
+                    <p id="sec-event">
+                        <span class="event-link-svg">
+                            <svg width="100%" height="100%" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1H7M7 1V6.84211M7 1L1 7" stroke="white" stroke-linecap="round"/>
+                            </svg>                            
+                        </span>
+                        <span data-lan="en">Volunteers For Life</span>
+                    </p>
+                </li>
+                <li class="event-item flex-center-col">
+                    <a href="/events/abc-volunteering" aria-labelledby="thrd-event"></a >
+                    <img src="/statics/images/events-images/event-main.jpeg" class="event-img" loading="lazy">
+                    <p id="thrd-event">
+                        <span class="event-link-svg">
+                            <svg width="100%" height="100%" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1H7M7 1V6.84211M7 1L1 7" stroke="white" stroke-linecap="round"/>
+                            </svg>                            
+                        </span>
+                        <span>اسم الفعالية</span>
+                    </p>
+                </li>
+                <li class="event-item flex-center-col">
+                    <a href="/events"></a>
+                    <img src="" alt="" class="event-img">
+                    <p>
+                        <span class="event-link-svg">
+                            <svg width="100%" height="100%" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1H7M7 1V6.84211M7 1L1 7" stroke="white" stroke-linecap="round"/>
+                            </svg>                            
+                        </span>
+                        <span>تعرف على قائمة الفعاليات كاملة</span>
+                    </p>
+            </ul>
+            <div class="slider-anchors">
+            </div>
+        </section> -->
+        <section id="join-us" class="flex-center">
+            <figure id="volunteers-img" class="fader">
+                <span class="circle" id="c-one"></span>
+                <span class="circle" id="c-two"></span>
+                <span class="circle" id="c-three"></span>
+                <span class="circle" id="c-four"></span>
+                <img src="/statics/images/home-images/vol-img1.webp" alt="صور لاحد متطوعاتنا" class="circle" id="c-five" data-no-sizing="yes" loading="lazy">
+                <img src="/statics/images/home-images/vol-img2.webp" alt="صورة لاحد متطوعينا" class="circle" id="c-six" data-no-sizing="yes" loading="lazy">
+                <img src="/statics/images/home-images/vol-img3.webp" alt="صورة لمتطوعتين معنا" class="circle" id="c-seven" data-no-sizing="yes" loading="lazy">
+            </figure>
+            <article class="join-content flex-center-col">
+                <header class="flex-center-col">
+                    <h5 class="section-title-ar"><span class="slide-out-text fader">انضم</span><span class="slide-out-text fader"> الينا</span></h5>
+                    <i class="sub-title-ar slide-out-text fader">استثمر قدراتك في الخير</i>
+                </header>
+                <p class="slide-out-text fader">العمل التطوعي هو وسيلة عظيمة لتنمية مجتمعك. حيث يمكنك المساهمة في إحداث فرق فيه وتغيير حياة الاخرين الى الافضل.</p>
+                <footer>
+                    <a href="{{ url_for('.ar_join_us') }}" class="main-CTAs flex-center fader"><span>اكتشف الفرص المتاحه</span></a>
+                </footer>
+            </article>
+        </section>
+    </main>
+
+{% endblock %}
+
+{% block docJs %}
+
+<script type="module" src="/statics/ar-js/index.js"></script>
+
+{% endblock %}
