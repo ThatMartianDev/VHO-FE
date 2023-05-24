@@ -1,0 +1,34 @@
+/*/ Prefixes definations /*/
+
+~ = consective numbers for the commit-type series
+    example:
+        added new phone styles to the phone version of the programs overview page,
+        last commit was 1.0.9 for this commit you write 1.0.10 and so on.
+
+a = asset
+c = code
+ch = change
+r = remove
+t = test
+u = update
+v = version
+uca = Updating/Changing Assests
+ucc = Updating/Changing Code
+
+
+/*/ Commits naming /*/
+
+<page name> 1.1".000 = add/update phone styles
+<page name> 1.2.000 = add/update tablet styles
+<page name> 1.3.000 = add/update desktop styles
+<page name> 1.4.000 = fully responsive yet not ready for production
+<page name> 1.5.000 = add/update animations
+<realted page name and/or file name> < ch/r/u> 1.6.000 = backend related commits
+
+<page name> t1.0.000 = ready for live testing
+<page name> v1.0.000 = deploy for production
+
+<page name > u/cha-v1.~.~~~ = changing/updating assets after deploying for production
+<page name> u/chc-v1.~.~~~ = changing/updating code after deploying for production
+<page name + asset> ra-v1.~.~~~ = removing assets after deploying for production
+<page name> rc-v1.~.~~~ = removing code after deploying for production
